@@ -119,4 +119,123 @@
         int new_num = Integer.parseInt(num5);
         System.out.println(new_num); //outputs the user string input 
 
+      //CONDITIONS AND BOOLEAN
+
+        //Comparison operator
+        int a_ = 10;
+        int b_ = 5;
+        int c_ = 15;
+
+        //less than
+        boolean Compare = a_ < b_;
+        System.out.println(Compare); //False
+
+        //greater than
+        boolean compare1 = a_ > b_ ;
+        System.out.println(compare1); // True
+
+        //equal
+        boolean compare2 = a_ == b_;
+        System.out.print(compare2);  //False
+
+        //not equal
+        boolean compare3 = a_ != b_;
+        System.out.println(compare3); // True
+
+        //Compare String
+        Scanner scanner_ = new Scanner(System.in);
+        String name = scanner_.nextLine();
+        boolean name1 = name.equals("Owen");
+        System.out.println(name1); // return T/F according to your input
+
+
+        //COMPARISON WITH (AND,NOR,OR) operators
+        // ("||") rep OR operator
+        // ("&&") rep   AND operator
+        //("!()") NOT operator
+
+        //T || F = F
+        //F || T = T
+        //T || T = T
+        //F || F = F
+        //F && F = F
+        //F && T = F
+        //T && F = F
+        //T && T = T
+        // (!()) reverses the final result.
+
+        int ab_ = 10;
+        int bc_ = 20;
+        int cd_ = 30;
+
+        boolean comapre001 = ab_<bc_ && bc_<cd_;
+        System.out.println(comapre001); //True
+
+        boolean comapre002 = ab_>bc_ || bc_<cd_;
+        System.out.println(comapre002); //True
+
+        boolean comapre003 = !(ab_>bc_ || bc_<cd_);
+        System.out.println(comapre003); //False
+
+        boolean comapre004 = !(ab_<bc_ && cd_>ab_ + 2) || (cd_==20 || cd_<ab_);
+        System.out.println(comapre004); //False
+
+        boolean comapre005 = (ab_<bc_ && cd_>ab_ + 2) || (cd_==20 || cd_<ab_);
+        System.out.println(comapre005); //True
+
+
+        //IF ELSE ,ELSE IF STATEMENTS
+        Scanner scanner_1 = new Scanner(System.in);
+        String name_owen = scanner_1.nextLine();
+        if(name_owen.equals("Timz_Owen"))
+        {
+            System.out.println("Yes you typed Timz's Owen's Name");
+        } //if name typed the output is given as in the String
+
+        //Else If
+        if(name_owen.equals("Kabarak"))
+        {
+            System.out.println("Studies there");
+        }
+        else
+        {
+            System.out.println("That's not His university");
+        }
+
+        //If Else, Else If
+        if(name_owen.equals("Kabarak"))
+        {
+            System.out.println("Studies there");
+        }
+        else if(name_owen.equals("UoN"))
+        {
+            System.out.println("Did masters there");
+        }
+        else if(name_owen.equals("GuternBerg"))
+        {
+            System.out.println("Did phd there");
+        }
+        else
+        {
+            System.out.println("I don't understand your input");
+        }
+
+
+        //NESTED STATEMENTS & MINI-SUMMARY
+        System.out.println("Input Your Age");
+        Scanner scan_1 = new Scanner(System.in);
+        String your_age = scan_1.nextLine();
+        int age_int = Integer.parseInt(your_age);
+        if((age_int > 18) && (age_int<100))
+        {
+            System.out.println("You can drive");
+        }
+        else if((age_int<18) && (age_int>0))
+        {
+            System.out.println("You cannot drive,young man");
+        }
+        else
+        {
+            System.out.println("Invalid input");
+        }
 
