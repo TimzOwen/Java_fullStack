@@ -239,3 +239,96 @@
             System.out.println("Invalid input");
         }
 
+       // Nested loops inside loops
+        System.out.println("Input Your Job salary");
+        final Scanner sc_salary = new Scanner(System.in);
+        final String your_pay = sc_salary.nextLine();
+        final int pay_int = Integer.parseInt(your_pay);
+        if ((pay_int > 18000) && (pay_int < 30000)) {
+            System.out.println("Entry Level Developer");
+        } else if ((pay_int > 80000) && (pay_int < 30000)) {
+            System.out.println("Junior Developer");
+        } else if (pay_int > 81000) {
+            System.out.println("You are a Senior Engineer, Would you join Andela?");
+            final String new_company = sc_salary.nextLine();
+            if (new_company.equals("Yes"))
+            {
+                System.out.println("New salary is ksh:350,000");
+            } else if (new_company.equals("No"))
+            {
+                System.out.println("What offer would you want?");
+                final String sc_offer = sc_salary.nextLine();
+                final int pass_int = Integer.parseInt(sc_offer);
+                if (pass_int > 500000)
+                {
+                    System.out.println("We can't pay more than this");
+                } else if ((pass_int > 300000) && (pass_int < 498000)) {
+                    System.out.print("You are in for full stack payroll");
+                } else
+                 {
+                    System.out.println("Invalid/low payroll");
+                }
+            }
+
+        } else {
+            System.out.println("Invalid input");
+        }
+
+        // UP-NEXT ON ARRAYS
+
+        // Holds data of the same type. uses the opening and closing square brackets.
+        final int[] new_array_numbers = new int[10]; // 10 is the number of elements in the array.
+        final String[] names = new String[20];
+        // Indexing arrays starts with 0 and not 1
+        // Accessing elements in an array
+        final String[] name_students = new String[5];
+        name_students[0] = "Joy";
+        name_students[1] = "Shem";
+        name_students[2] = "Timz";
+        name_students[3] = "Juma";
+        name_students[4] = "Stacy";
+
+        System.out.println(name_students[2]); // Timz
+
+        // Declaration and initialization of arrays method 2
+        final int[] numbers_array = { 2, 4, 5, 6, 7, 8, 9, 5, 6, 5 };
+        System.out.println(numbers_array[2]); // 5
+
+        // UP-NEXT ON FOR LOOPS:
+        // doing some task based on certain iterations
+
+        // looping integers using conditions
+        int x_i;
+        for (x_i = 0; x_i <= 10; x_i++)
+         {
+            System.out.println(x_i);
+        }
+
+        // increment with intervals
+        int j;
+        for (j = 0; j <= 20; j += 5) {
+            System.out.println(j); // 0, 5, 10, 15,20
+        }
+
+        // variables in for loop
+        final int a_a = 5;
+        int w;
+        for (w = 0; w <= a_a; w += 2)
+         {
+            System.out.println(w); // 0,2,4
+        }
+
+        // for loops and arrays
+        final int[] arr = { 2, 4, 6, 8, 10, 2, 14, 16, 18, 2 };
+        for (int i=0; i<arr.length; i++)
+        {
+            if(arr[0] == 2)
+            {
+                System.out.println("Found 2 at index: " + i);
+            }
+            // else
+            // {
+            //     System.out.println("At index 0 is not 2 but: " + arr[0]);
+            // }
+        }
+
