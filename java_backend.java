@@ -326,9 +326,9 @@
             {
                 System.out.println("Found 2 at index: " + i);
             }
-            // else
-            // {
-            //     System.out.println("At index 0 is not 2 but: " + arr[0]);
-            // }
+            else
+            {
+                System.out.println("At index 0 is not 2 but: " + arr[0]);
+            }
         }
 
