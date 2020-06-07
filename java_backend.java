@@ -409,4 +409,74 @@
         }
 
 
+        //UP-NEXT ON SETS AND LISTS;
+        //From the collection interface;
+        //set is a collection of un-odered elements that are unique, no order
+
+        //creating a new set
+        set<Integer> t = new HashSet<Integer>();
+        //add elemets
+        t.add(2);
+        t.add(5);
+        t.add(9);
+        t.add(-7);
+        t.add(21);
+
+        System.out.println(t);
+
+        //check if an element exits
+                //creating a new set
+                Set<Integer> t = new HashSet<Integer>();
+                //add elemets
+                t.add(2);
+                t.add(5);
+                t.add(9);
+                t.add(-7);
+                t.add(21);
+        
+                boolean x_x = t.contains(9);
+                System.out.println(x_x);
+        
+                //Removing an element
+                         //creating a new set
+                         Set<Integer> t = new HashSet<Integer>();
+                         //add elemets
+                         t.add(2);
+                         t.add(5);
+                         t.add(9);
+                         t.add(-7);
+                         t.add(21);
+                         //removing
+                         t.remove(21);
+                         //clear entire set
+                         t.clear();
+                         //check if a set is empty
+                         t.isEmpty();
+                         //get lenght
+                         t.size();
+
+                         System.out.println(t);
+
+        //TREE -SETS
+        //ordered in form of a tree with unique elements
+        Set<Integer> t_set = new TreeSet<Integer>();
+        t_set.add(45);
+        t_set.add(10);
+        t_set.add(5);
+        t_set.add(-5);
+        t_set.add(55);
+
+        System.out.println(t_set); //[-5, 5, 10, 45, 55]
+
+        // LINKED HASH SET(like other sets , but its faster on certain operations);
+        Set<Integer> h_set = new LinkedHashSet<Integer>();
+        t_set.add(45);
+        t_set.add(10);
+        t_set.add(5);
+        t_set.add(-5);
+        t_set.add(55);
+
+        System.out.println(h_set);
+
+        //LISTS
 
