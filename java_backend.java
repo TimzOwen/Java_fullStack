@@ -371,5 +371,42 @@
                 break;
             }
         }
+     
+        //UP-NEXT WHILE LOOPS....
+        //used for conditions where you dont know the  looping break
+        Scanner scan_sc = new Scanner(System.in);
+        int x_x = scan_sc.nextInt();
+        while(x_x != 10){
+            System.out.print("Type a number ");
+            System.out.print("Type 10....");
+            x_x = scan_sc.nextInt();
+        }
+
+        //add a counter
+        Scanner scan_scc = new Scanner(System.in);
+        int x_x_x = scan_sc.nextInt();
+        int counter=0;
+        while(x_x != 10){
+            System.out.print("Type a number ");
+            System.out.print("Type 10....");
+            x_x_x = scan_scc.nextInt();
+            counter++;
+        }
+        System.out.println("You tried " + counter + " times");
+
+
+        //DO-While LOOP
+        Scanner sscan = new Scanner(System.in);
+        int do_;
+        do
+        {
+            System.out.println("Enter a number");
+            do_ = sscan.nextInt();
+        }
+        while(do_ != 10);
+        {
+
+        }
+
 
 
