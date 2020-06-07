@@ -331,4 +331,45 @@
                 System.out.println("At index 0 is not 2 but: " + arr[0]);
             }
         }
+     
+     //More on Loops (For each loop)
+        //breaking out if loops and common examples
+        int[] arrays = { 2, 4, 6, 8, 10, 2, 14, 16, 18, 2 };
+        String [] names_ = new String[5];
+        //assign current element to the same variable at that level
+        for(int elements:arrays)
+        {
+            System.out.println(elements); //prints all elements;
+        }
+
+        //loop while keeping track of each index
+        int[] arrays = { 2, 4, 6, 8, 10, 2, 14, 16, 18, 2 };
+        String [] names_ = new String[5];
+        int count = 0;
+        //assign current element to the same variable at that level
+        for(int elements:arrays)
+        {
+            System.out.println(elements + " " + count); //prints all elements;
+            count++;
+        }
+
+        //populating an array using a for loop
+        String [] user_names = new String [5];
+        Scanner sc_sc = new Scanner(System.in);
+        for (int i=0; i<user_names.length; i++)
+        {
+            System.out.print("Enter input names");
+            String inputs = sc_sc.nextLine();
+            user_names[i]=inputs;
+        }
+        //now print the elements to the array
+        for(String n:user_names)
+        {
+            System.out.println(n);
+            if(n.equals("Timz"))
+            {
+                break;
+            }
+        }
+
 
