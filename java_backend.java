@@ -479,4 +479,23 @@
         System.out.println(h_set);
 
         //LISTS
+               //string elements of the same type.
+            ArrayList<Integer> intList = new ArrayList<Integer>();
+
+            // adding elements
+            intList.add(10);
+           intList.add(5);
+           intList.add(4);
+           intList.add(3);
+           intList.add(15);
+
+           //removing elements arcoding to index.
+           intList.remove(4);
+
+           System.out.println(intList);
+
+           System.out.println(intList.get(2)); //getting a specific element using index
+           intList.set(0,55); //setting a specific index to a new value
+
+
 
