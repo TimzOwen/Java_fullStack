@@ -496,6 +496,68 @@
 
            System.out.println(intList.get(2)); //getting a specific element using index
            intList.set(0,55); //setting a specific index to a new value
+     
+      //LinkedList are more faster in operations
+           LinkedList<Integer> t = new LinkedList<>();
+           t.add(10);
+           t.add(1);
+           t.add(56);
+           t.add(2);
+           t.add(16);
+           System.out.println(t);
+
+
+
+           // UP-NEXT- MAPS AND HASHMAPS
+           //This are key value pairs/ dictionaries. allows indexing my keys and not numbers like lists
+           Map  map = new HashMap<>();
+           map.put("Timz", 10);
+           map.put("Timz", "Owen");
+           map.put("ww", "www");
+           map.put("ww","wwww"); //this will override the above key
+           map.put(20, 1000);
+           System.out.println(map); //{Timz =10}
+           System.out.println(map.get("Timz")); // get key to that value = 10
+
+
+           //The keys have to be the same
+        Map  tMap = new HashMap();
+        tMap.put(10,"Timz");
+        tMap.put(1,"Developer");
+        tMap.put(15,"Kabrak");
+        tMap.put(108, "Owen");
+
+        tMap.remove(""); //removes keys/elements in a map
+        tMap.clear(); //Removes all the keys and Values in the map
+
+        System.out.println(tMap.isEmpty()); //returns a boolean if the map is empty or not
+        System.out.println(tMap);
+        System.out.println(tMap.containsValue("Timz")); //check if a certain value is present
+        System.out.println(tMap.containsKey(5)); //returns true/false if the key is present
+        System.out.println(tMap.values()); //prints all the values
+
+        //MAPS example
+        //counting through a string
+        //1.0 using for loops
+        Map m = new HashMap<>();
+        String words = "Timz owen is a good coder and Hardware Engineer";
+        for(char x :words.toCharArray())
+        {
+            if(m.containsKey(x))
+            {
+                int old = (int) m.get(x);
+                m.put(x, old+1);
+            }
+            else
+            {
+                m.put(x, 1);
+            }
+        }
+        System.out.print(m);
+
+        //Sorting arrays
+        int numberSort = {-90,10,8,2,3,200,15,-1000,4,5};
+
 
 
 
