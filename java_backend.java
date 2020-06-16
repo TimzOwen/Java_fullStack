@@ -559,5 +559,65 @@
         int numberSort = {-90,10,8,2,3,200,15,-1000,4,5};
 
 
+     int [] fullsort = {-90,10,8,2,3,200,15,-1000,4,5};
+        //sorting the entire  array with no specific range;
+        Arrays.sort(fullsort);
+        for (int i:fullsort)
+        {
+            System.out.print(i + " ");
+        }
+
+
+
+        //UP-NEXT ON OBJECTS AND CLASSES
+        //object is an instance of a certain data type
+        //example of objects, have different input and attributes
+        Scanner scanObject = new Scanner(System.in);
+        String str = "Hello objects"; //string objects
+
+        //methods
+        //anything you call on an instance of an object
+        //they point to an object
+        scanObject.nextInt(); //this a method call from object Scanner
+
+        //create a new class. 
+        public class java_fullStack {
+
+            public static void main(String[] args){
+                //Methods and function with no return values
+                //call the method here
+                myName();
+                //call the second method that has the input parameters;
+                parameterMethod("Owen Coder", 5);
+                //call the method with return type int
+                System.out.println(returnSum(5));
+                //call the method with return type of a string
+                System.out.println(yourName("Tim Timz"));
+            }
+            public static void myName()
+            {
+                System.out.println("Timz Owen");
+            }
+            public static void parameterMethod(String name, int age)
+            {
+                for(int i=0; i<=age; i++)
+                {
+                    System.out.println(name);
+                }
+            }
+            public static int returnSum(int num)
+            {
+                return num * 2;
+            }
+            public static String yourName(String userName)
+            {
+                return userName + " !!";
+            }
+        }
+
+
+
+        //UP-NEXT CREATING CLASSES::
+        
 
 
