@@ -617,7 +617,18 @@
 
 
 
-        //UP-NEXT CREATING CLASSES::
+        //UP-NEXT CREATING CLASSES:
+          //attributes define the objects
+        //create a new class of Dogs
+        //on the new class created; (Fullstack 2)
+
+
+        //On protected Keys
+        //This means that only the packages with same class domain will be able to see it and not the other 
+        //packages on large java programs
+
+
+        //UP-NEXT ON STATIC
         
 
 
