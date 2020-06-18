@@ -1,0 +1,27 @@
+public class car implements Vehicle{
+
+    private int gear;
+    private int speed;
+
+    public void changGears(int gear)
+    {
+        this.gear = gear;
+    }
+
+    public void speedUp(int change)
+    {
+        this.speed += change;
+    }
+
+    public void slowDown(int change)
+    {
+        this.speed -= change;
+    }
+
+    public void display()
+    {
+        System.out.println("This BMW at gear " + this.gear + " is moving at " + this.speed + " Km/hr");
+    }
+
+
+}
