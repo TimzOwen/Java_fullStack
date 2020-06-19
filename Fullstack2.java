@@ -137,3 +137,49 @@ public class java_fullStack {
    }
 }
 
+
+   //UP NEXT ON ENUMS
+   //This are collection of constants that make your code more readable
+   //create an enum just like classes and interfaces are created
+   //IN our case level has been done
+
+   public class java_fullStack {
+
+      public static void main(String[] args) {
+
+
+          Level level = Level.LOW;
+
+          if (level == Level.MEDIUM)
+          {
+              System.out.println(level);
+          }
+          else if(level == Level.LOW)
+          {
+              System.out.println(level);
+          }
+          else
+          {
+              System.out.println(level);
+          }
+
+      }
+  }
+
+  //you can also check on all the elements in an enum using arrays.
+  public class java_fullStack {
+
+   public static void main(String[] args) {
+       //get all values
+       //stored in arrays to avoid displaying memory allocations in the computer's Ram
+       Level [] arrays = Level.values();
+
+       //loop through each element
+       for (Level e : arrays)
+       {
+           System.out.println(e);
+       }
+
+
+   }
+
