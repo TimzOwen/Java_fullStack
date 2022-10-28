@@ -17,3 +17,40 @@ public class Lambdas {
         System.out.println(names);
     }
 }
+
+
+
+// Interfaces vs lambda expressions
+
+interface Shape{
+    void draw();
+}
+
+class Rectangle implements Shape{
+    @Override
+    public void draw() {
+        System.out.println("Rectangle class just got printed");
+    }
+}
+
+class Circle implements Shape{
+    @Override
+    public void draw() {
+        System.out.println("Circle shape just got printed");
+    }
+}
+
+class Square implements Shape{
+    @Override
+    public void draw() {
+        System.out.println("Square Just got printed");
+    }
+}
+
+public class lambdas {
+
+    public static void main(String[] args) {
+        Shape square = () -> System.out.println("Square class method");
+        square.draw();
+    }
+}
