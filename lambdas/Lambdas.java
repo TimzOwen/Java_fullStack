@@ -50,7 +50,14 @@ class Square implements Shape{
 public class lambdas {
 
     public static void main(String[] args) {
+
         Shape square = () -> System.out.println("Square class method");
         square.draw();
+
+        Shape circle = () -> System.out.println("Circle just got printed");
+        circle.draw();
+
+        Shape rectangle = () -> System.out.println("Rectangle got printed out");
+        rectangle.draw();
     }
 }
