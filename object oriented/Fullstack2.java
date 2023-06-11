@@ -31,7 +31,7 @@ public class java_fullStack2 {
      //changes from different classes;
 
      Dog newDog = new Dog("bill ",10);
-     Dod newDog2 = new Dog("Joe", 15);
+     Dog newDog2 = new Dog("Joe", 15);
 
         System.out.println(Dog.counter); // 2
 
