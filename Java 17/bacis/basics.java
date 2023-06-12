@@ -38,5 +38,56 @@ public class basics {
         score=scanner.nextInt();
         System.out.println("New score: " + score);
 
+        //CONTROL STATEMENT
+
+        // If else statement
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number...");
+        int age = scanner.nextInt();
+        if (age > 8) {
+            System.out.println("you are an Adult");
+        }else {
+            System.out.println("you are not an adult");
+        }
+
+        // Loops
+
+        // While loops
+         // While loops
+        Scanner scanner = new Scanner(System.in);
+        boolean isOnRepeat = true;
+        while (isOnRepeat){
+            System.out.println("Playing current song");
+            System.out.println("play new song?....");
+            String newSong = scanner.next();
+            if ("yes".equals(newSong)){ // String comparison
+                isOnRepeat = false;
+            }
+        }
+        System.out.println("playing next song....");
+
+
+         // Multiple choice question
+        String choiceOne = "Pep";
+        String choiceTwo = "Klop";
+        String choiceThree = "Arteta";
+        String question = " Who is the manager for Arsenal";
+
+        System.out.println(question);
+        System.out.println(choiceOne);
+        System.out.println(choiceTwo);
+        System.out.println(choiceThree);
+
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.next();
+
+        if (input.equals(choiceThree)){
+            System.out.println("Congratulation you win");
+        }else {
+            System.out.println("you lost");
+        }
+
+        
+
     }
 }
