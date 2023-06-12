@@ -87,7 +87,45 @@ public class basics {
             System.out.println("you lost");
         }
 
-        
+        // soln 2 
+        Scanner scanner = new Scanner(System.in);
+        String question = "Capital city of Kenya";
+        String choiceOne = "Kisumu";
+        String choiceTwo = "Nakuru";
+        String choiceThree = "nairobi";
+
+        System.out.println(question);
+        System.out.println("choose from " + choiceOne + " " + choiceTwo + " " + choiceThree);
+        String attemptedAns = scanner.next();
+        if (choiceThree.equals(attemptedAns.toLowerCase())){
+            System.out.println("You win....");
+        }else {
+            System.out.println(" You lost \n Correct answer is: " + choiceThree);
+        }
+
+        // For loop
+        for (int a = 0; a <= 10; a++) {
+            System.out.println(a);
+        }
+
+         // Area of a Triangle
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter base of the Triangle");
+        double base = scanner.nextDouble();
+        while (base<=0){
+            System.out.println("cannot be less than  " + base);
+            base=scanner.nextDouble();
+        }
+        System.out.println("Enter Height of the Triangle");
+        double height = scanner.nextDouble();
+        while (height<=0){
+            System.out.println("Cannot be less than " + height);
+            height=scanner.nextDouble();
+        }
+        System.out.println((base * height)/2);
+
+        // 
+
 
     }
 }
