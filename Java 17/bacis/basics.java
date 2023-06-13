@@ -124,7 +124,43 @@ public class basics {
         }
         System.out.println((base * height)/2);
 
-        // 
+        
+        // create and calling functions
+         public static void main(String[] args) {
+        announceTeaTime();
+            }
+        public static void announceTeaTime(){
+            System.out.println("Waiting for tea time.......");
+            System.out.println("Enter anyword to ring the bell ");
+            Scanner scanner = new Scanner(System.in);
+            scanner.next();
+            System.out.println("Yes!....its tea time");
+           }
+
+        // Functions... inputs
+        public static void main(String[] args) {
+                calculateTotalMeal(100,20,5);
+             }
+        public static void calculateTotalMeal(double tipRate, double taxRate, double listedPrice){
+            double tip = tipRate + listedPrice;
+            double tax = taxRate + listedPrice;
+            double result = listedPrice + tip + tax;
+            System.out.println(result);
+            }
+            
+        // Function Return types.
+        public static void main(String[] args) {
+            double total = calculateTotalMeal(100,20,5);
+            double pricePerPerson = total/5;
+            System.out.println(pricePerPerson);
+            }
+        public static double calculateTotalMeal(double tipRate, double taxRate, double listedPrice){
+            double tip = tipRate + listedPrice;
+            double tax = taxRate + listedPrice;
+            return  listedPrice + tip + tax;
+            }
+
+        // Functions - Inbuilt Functions     
 
 
     }
