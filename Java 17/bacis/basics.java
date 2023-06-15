@@ -218,5 +218,12 @@ public class basics {
         Triangle triangle = new Triangle(22,12,34,32,2);
         System.out.println("Area of the triangle is: " + triangle.findArea()); // print area of the triangle
 
+        // Student class
+        // student
+        Student student = new Student("Timz","Owen",4,2020,"IT");
+        System.out.println(student.studentMajor());
+        System.out.println(student.joiningYear());
+        System.out.println(student.graduationYear);
+
     }
 }
