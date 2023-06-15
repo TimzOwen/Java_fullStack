@@ -160,8 +160,63 @@ public class basics {
             return  listedPrice + tip + tax;
             }
 
-        // Functions - Inbuilt Functions     
+        // Functions - Inbuilt Functions  
+        System.out.println(Math.pow(2,5));   
 
+        // Employee salary per hour rate calculation
+        public static void main(String[] args) {
+            System.out.println(employeeSalary(500,8));
+            }
+        public static double employeeSalary(double hourlyRate, double hours){
+            return hourlyRate * hours;
+            }
+
+        // option 2
+        public static void main(String[] args) {
+            System.out.println(employeeSalary(1,8));
+             }
+        public static double employeeSalary(double hourlyRate, double hours){
+            if (hours<0){
+                return 0;
+            }
+            if (hourlyRate<0){
+                return 0;
+            }
+            double dailyPaycheck= hourlyRate * hours;
+            return dailyPaycheck * 28;
+        }   
+        
+        // option 3
+            public static void main(String[] args) {
+            System.out.println(employeeSalary(100,8,2));
+            }
+        public static double employeeSalary(double hourlyRate, double hours, double lunchHours){
+            if (hours<0 || hourlyRate <0){
+                return 0;
+            }
+            double dailyPaycheck= hourlyRate * hours;
+            double unpaidTime = lunchHours * hourlyRate * 28;
+            return dailyPaycheck * 28 - unpaidTime;
+        }
+
+        // option 4
+
+        public static void main(String[] args) {
+            System.out.println(employeeSalary(100,8,2));
+            }
+        public static double employeeSalary(double hourlyRate, double hours, double lunchHours){
+            if (hours<0 || hourlyRate <0){
+                return 0;
+            }
+            double dailyPaycheck= hourlyRate * hours;
+            double unpaidTime = lunchHours * hourlyRate * 28;
+            return dailyPaycheck * 28 - unpaidTime;
+        }
+
+        // Claases: 
+        // call the triangle class
+        Triangle triangle = new Triangle(22,12,34,32,2);
+        System.out.println("Area of the triangle is: " + triangle.findArea()); // print area of the triangle
 
     }
 }
