@@ -213,5 +213,10 @@ public class basics {
             return dailyPaycheck * 28 - unpaidTime;
         }
 
+        // Claases: 
+        // call the triangle class
+        Triangle triangle = new Triangle(22,12,34,32,2);
+        System.out.println("Area of the triangle is: " + triangle.findArea()); // print area of the triangle
+
     }
 }
